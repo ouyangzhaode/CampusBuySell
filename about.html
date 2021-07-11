@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-sacle=1.0">
+        <title>Campus Buy and Sell </title>
+        
+        <link rel="stylesheet" href="style.css">
+        
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
+    </head>
+
+
+    <body>
+        <section class="main">
+            <!----Navigation bar-->
+            <nav>
+                <a href="main.html"><img src="images/NEU-BRAND.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="post.html">POST</a></li>
+                        <li><a href="allItems.html">BROWSE MORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="myaccount.html">My ACCOUNT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        
+
+        <!-----about us content-------->
+        
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="row">
+                <div class="about-col">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad totam unde dolor ullam,
+                         obcaecati est? Quod veritatis eos natus molestias.
+                         Perspiciatis nobis ut doloribus consectetur, maxime temporibus ipsa accusamus hic!</p>
+                        <a href="" class="hero-btn red-btn">EXOLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/Northeastern Seattle_0.jpg">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about-us">
+            <h1>Current Problems</h1>
+            <div>
+                <div class="about-col">
+                    <p> When people buying and selling used goods in the local marketplace, it is easy to get scam, and the personal safety of sellers and buyers is a concern. If people want protection, eBay is almost the only choice. However, we need to pay a high transaction fee and shipping on eBay. Since I’m a college student, I can use the opportunity to create a platform to protect student and help them save money when buying and selling goods by using the school email to isolate the outsider.</p>
+                </div>
+                <div class="about-col">    
+                </div>
+            </div>
+
+            <h1>Our Solution
+            </h1>
+            <div>
+                <div class="about-col">
+                    <p> Our solution is to create a platform to combine a good rating system and a school email-verification system without charging a listing or a transaction fee. Therefore, the platform will give students more confidence when they are selling and buying used goods and help them to save money.</p>
+                </div>
+                <div class="about-col">    
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+        <!-------Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <br>aperiam eveniet? Vel, fugiat consequatur.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Runyu Fan, Zhaode Ouyang, Zixun Zhou</p>
+        </section>
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-sacle=1.0">
+        <title>Campus Buy and Sell </title>
+        
+        <link rel="stylesheet" href="style.css">
+        
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
+    </head>
+
+
+    <body>
+        <section class="main">
+            <!----Navigation bar-->
+            <nav>
+                <a href="main.html"><img src="images/NEU-BRAND.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="post.html">POST</a></li>
+                        <li><a href="allItems.html">BROWSE MORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="myaccount.html">My ACCOUNT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="myAccount">
+                <h1>Sigh Up</h1>
+                <br>
+                <h2>Your basic info</h2>
+                <form>
+                  <p>Name:</p>
+                  <input>
+                  <br>
+                  <br>
+                  <p>Passward:</p>
+                  <input>
+                  <br>
+                  <br>
+                  <p>Age:</p>
+                  <br>
+                  <input type="radio" checked="checked"/>
+                  Under 21<br>
+                  <input type="radio" value="2"/>
+                  21 or older<br>
+                  <br>
+                  <p>Your profile:</p>
+                  <br>
+                  <textarea cols="50" rows="4" name="profile" id="profile"></textarea>
+                  <br>
+                  <br>
+                  <p>Live in:</p>
+                  <br>
+                  <select>
+                    <option value="Front-End Developer" selected="selected" name="job">On Campus</option>
+                    <option value="Back-End Developer" name="job">Off Campus</option>
+                  </select>
+                  <br>
+                  <br>
+                  <p>Interests:</p>
+                  <br>
+                  <input type="checkbox" name="development" value="1" checked="checked">
+                  Electronic<br>
+                  <input type="checkbox" name="design" value="2" >
+                  Car<br>
+                  <input type="checkbox" name="business" value="3" >
+                  Clothes<br>
+                  <br>
+                  <input type="submit" name="Sign Up" value="Sign Up" id="sub" onclick="abc()">
+                </form>
+              </div>
+
+
+
+
+
+        </section>
+
+        
+
+
+        <!-------Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <br>aperiam eveniet? Vel, fugiat consequatur.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Runyu Fan, Zhaode Ouyang, Zixun Zhou</p>
+        </section>
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
